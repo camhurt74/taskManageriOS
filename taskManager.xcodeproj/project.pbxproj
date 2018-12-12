@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C2A1E8921C03312008DCB3B /* descriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A1E8821C03312008DCB3B /* descriptionVC.swift */; };
 		3CC80AA521AC7585009EB42E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC80AA421AC7585009EB42E /* AppDelegate.swift */; };
 		3CC80AA721AC7585009EB42E /* viewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC80AA621AC7585009EB42E /* viewController.swift */; };
 		3CC80AAA21AC7585009EB42E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC80AA821AC7585009EB42E /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C2A1E8821C03312008DCB3B /* descriptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = descriptionVC.swift; sourceTree = "<group>"; };
 		3CC80AA121AC7585009EB42E /* taskManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taskManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC80AA421AC7585009EB42E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CC80AA621AC7585009EB42E /* viewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				3CC80AB821AC7B3E009EB42E /* taskLibrary.swift */,
 				3CF83F7821ADA47E000F542D /* cell.swift */,
 				3CCB418321ADAD7000714BF0 /* addTaskVC.swift */,
+				3C2A1E8821C03312008DCB3B /* descriptionVC.swift */,
 			);
 			path = taskManager;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CC80AB921AC7B3E009EB42E /* taskLibrary.swift in Sources */,
+				3C2A1E8921C03312008DCB3B /* descriptionVC.swift in Sources */,
 				3CCB418421ADAD7000714BF0 /* addTaskVC.swift in Sources */,
 				3CC80AA721AC7585009EB42E /* viewController.swift in Sources */,
 				3CC80AB721AC7865009EB42E /* task.swift in Sources */,

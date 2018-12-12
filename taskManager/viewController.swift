@@ -25,10 +25,11 @@ class viewController: UIViewController {
         
          self.tableView.backgroundColor = UIColor.white
         tableView.reloadData()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    
+
     
 }
     
@@ -58,13 +59,13 @@ extension viewController: UITableViewDataSource, UITableViewDelegate {
         let calendar = Calendar(identifier: .gregorian)
         let dueDate = calendar.date(byAdding: .day, value: 7, to: Date())!
         
-        task.completed = false
+        task.completed = true
         (tableView.cellForRow(at: indexPath) as! Cell).setup(task: task)
     }
     
     func unCompleteATask(at indexPath: IndexPath) {
         let task = self.library.task[indexPath.row]
-        task.completed = true
+        task.completed = false
         (tableView.cellForRow(at: indexPath) as! Cell).setup(task: task)
         
     }
@@ -88,7 +89,7 @@ extension viewController: UITableViewDataSource, UITableViewDelegate {
                 
                 
             }
-           
+            
             return [uncompleteAction, deleteAction]
             
         case false:
@@ -96,12 +97,13 @@ extension viewController: UITableViewDataSource, UITableViewDelegate {
                 self.completeATask(at: indexPath)
                 
             }
-           
-                         return [completeAction, deleteAction]
+            
+            return [completeAction, deleteAction]
             
         }
     }
-
+   
+    
 }
 
 

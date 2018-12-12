@@ -18,6 +18,7 @@ class Cell: UITableViewCell {
     
    
     
+    
     func setup(task: Task) {
         
       
@@ -40,5 +41,16 @@ class Cell: UITableViewCell {
         taskTitleLabel.text = task.taskTitle
         dueDateLabel.text = formatter.string(from:date!)
         print(date!)
+        if task.completed == true {
+           availabilityView.backgroundColor = .green
+        } else {
+            
+            availabilityView.backgroundColor = .red
+        }
+   
+        
     }
+    
+
+
 }
